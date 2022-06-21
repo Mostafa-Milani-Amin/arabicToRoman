@@ -1,0 +1,40 @@
+const arabicToRoman = (arabic, roman = '') => {
+    roman +=  'M\u033F'.repeat(arabic / 1000000000); arabic %= 1000000000;
+    roman +=  '(|M\u0305|M\u033F)'.repeat(arabic / 900000000); arabic %= 900000000;
+    roman +=  'D\u033F'.repeat(arabic / 500000000); arabic %= 500000000;
+    roman +=  '(|M\u0305|D\u033F)'.repeat(arabic / 400000000); arabic %= 400000000;
+    roman +=  '|M\u0305|'.repeat(arabic / 100000000); arabic %= 100000000;
+    roman +=  '(|C\u0305||M\u0305|)'.repeat(arabic / 90000000); arabic %= 90000000;
+    roman +=  '|D\u0305|'.repeat(arabic / 50000000); arabic %= 50000000;
+    roman +=  '(|C\u0305||D\u0305|)'.repeat(arabic / 40000000); arabic %= 40000000;
+    roman +=  '|C\u0305|'.repeat(arabic / 10000000); arabic %= 10000000;
+    roman +=  '(M\u0305|C\u0305|)'.repeat(arabic / 9000000); arabic %= 9000000;
+    roman +=  '|L\u0305|'.repeat(arabic / 5000000); arabic %= 5000000;
+    roman +=  '(M\u0305|L\u0305|)'.repeat(arabic / 4000000); arabic %= 4000000;
+    roman +=  'M\u0305'.repeat(arabic / 1000000); arabic %= 1000000;
+    roman +=  '(C\u0305M\u0305)'.repeat(arabic / 900000); arabic %= 900000;
+    roman +=  'D\u0305'.repeat(arabic / 500000); arabic %= 500000;
+    roman +=  '(C\u0305D\u0305)'.repeat(arabic / 400000); arabic %= 400000;
+    roman +=  'C\u0305'.repeat(arabic / 100000); arabic %= 100000;
+    roman +=  '(X\u0305C\u0305)'.repeat(arabic / 90000); arabic %= 90000;
+    roman +=  'L\u0305'.repeat(arabic / 50000); arabic %= 50000;
+    roman +=  '(X\u0305L\u0305)'.repeat(arabic / 40000); arabic %= 40000;
+    roman +=  'X\u0305'.repeat(arabic / 10000); arabic %= 10000;
+    roman +=  '(I\u0305X\u0305)'.repeat(arabic / 9000); arabic %= 9000;
+    roman +=  'V\u0305'.repeat(arabic / 5000); arabic %= 5000;
+    roman +=  '(I\u0305V\u0305)'.repeat(arabic / 4000); arabic %= 4000;
+    roman +=  'M'.repeat(arabic / 1000); arabic %= 1000;
+    roman += '(CM)'.repeat(arabic / 900); arabic %= 900;
+    roman +=  'D'.repeat(arabic / 500); arabic %= 500;
+    roman += '(CD)'.repeat(arabic / 400); arabic %= 400;
+    roman +=  'C'.repeat(arabic / 100); arabic %= 100;
+    roman += '(XC)'.repeat(arabic / 90); arabic %= 90;
+    roman +=  'L'.repeat(arabic / 50); arabic %= 50;
+    roman += '(XL)'.repeat(arabic / 40); arabic %= 40;
+    roman +=  'X'.repeat(arabic / 10); arabic %= 10;
+    roman += '(IX)'.repeat(arabic / 9); arabic %= 9;
+    roman +=  'V'.repeat(arabic / 5); arabic %= 5;
+    roman += '(IV)'.repeat(arabic / 4); arabic %= 4;
+    roman +=  'I'.repeat(arabic);
+    return roman
+}
