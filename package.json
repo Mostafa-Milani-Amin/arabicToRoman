@@ -1,0 +1,32 @@
+{
+  "name": "arabictoroman",
+  "version": "1.0.0",
+  "description": "Converts positive integer Arabic numbers to Roman numerals.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mostafa-Milani-Amin/arabicToRoman.git"
+  },
+  "keywords": [
+    "arabic",
+    "roman",
+    "number",
+    "numbers",
+    "convert",
+    "converts",
+    "math",
+    "javascript",
+    "js",
+    "integer",
+    "numerals"
+  ],
+  "author": "Mostafa Milani Amin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mostafa-Milani-Amin/arabicToRoman/issues"
+  },
+  "homepage": "https://github.com/Mostafa-Milani-Amin/arabicToRoman#readme"
+}
