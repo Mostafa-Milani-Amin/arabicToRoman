@@ -1,6 +1,6 @@
 {
   "name": "arabictoroman",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converts positive integer Arabic numbers to Roman numerals.",
   "main": "index.js",
   "scripts": {
