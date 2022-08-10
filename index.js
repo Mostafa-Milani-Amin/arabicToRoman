@@ -39,4 +39,4 @@ const arabicToRoman = (arabic, roman = '') => {
     return roman
 };
 
-module.exports = { arabicToRoman };
+export default arabicToRoman;
